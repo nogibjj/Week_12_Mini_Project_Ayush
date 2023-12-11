@@ -70,6 +70,3 @@ contains additonal files which are used in the README
 ![Workflow](https://github.com/ayushg245/IDS-706-Proj1/blob/main/GitHub.png)
 
 
-
-[![Ayush CI](https://github.com/ayushg245/IDS-706-Proj1/actions/workflows/cicd.yml/badge.svg)](https://github.com/ayushg245/IDS-706-Proj1/actions/workflows/cicd.yml)
-
