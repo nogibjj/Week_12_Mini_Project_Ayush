@@ -1,48 +1,63 @@
-# IDS-706-Proj1
-A hands on Project to start with GitHub repository
+# Machine Learning using MLFlow
+This repositroy contains files to manage an End-to-End machine leanring project lifecycle using MLFlow
 #By - Ayush Gupta
 #Net ID- ag758
 
-## Goal
-The project goal is to get used to working on GitHub and create a basic working repository that could be used in future for other projects. Hence, it has been kept very basic and only goal is to install packages. 
+## Overview
+The repository has the main.py file which fits a simple linear regression using scikit-learn on the Sample Dataset from Github.
+MLFlow is used to keep track of the model and it's parameters and these are stored in the mlruns folder. Github CICD actions are automatically triggered whenever there is any change in the repository.
 
-## Developing
-We have created the following files  in the project : 
-1. Makefile
-2. README.md
-3. requirements.txt
-4. Github Actions
+## Execution
+Create a Codespace on main which will initialize the enviroment with the required packages and settings to execute the codes. Run the following command from the Terminal:
+```python main.py```
+
+The main.py file loads the CSV dataset and performs basic data processing and then fits a Linear Regression Model using scikit-learn library.
+The file then logs some of the parameters of the model and its performance using the MLFlow package. These results are stored in the mlruns folder.
+
+To have an interactive view of the results, run the following command in the Terminal :
+```mlflow ui --port 5000```
+
+This will open a browser section where the user can view and interact with the information about the models:
+
+
+## Contents
+The repository contains the following items:
+
+1. README.md
+contains the information about the repository and instructions for using it
+
+2. requirements.txt
+contains the list of packages and libraries which are required for running the project. These are intalled and used in the virtual environment and Github actions.
+
+3. .github/workflows
+github actions are used to automate the following processes whenever a change is made to the files in the repository:
+
+install : installs the packages and libraries mentioned in the requirements.txt
+
+test : uses pytest to test the python script Test Execution
+
+format : uses black to format the python files
+
+lint : uses ruff to lint the python files
+
+Note -if all the processes run successfully the following output will be visible in github actions: Success Build
+
+4. Makefile
+contains the instructions and sequences for the processes used in github actions and .devcontainer for creating the virtual environment
+
 5. .devcontainer
-6. A python file
+contains the dockerfile and devcontainer.json files which are used to build and define the setting of the virtual environment (codespaces - python) for running the codes.
 
-The Makefile.md has two targets along with the associated commands:
-1. install
-2. test
+6. Data
+The CSV data file is stored here for quick access
 
-requirements.txt contains all the packages that need to be installed. 
+7. resources
+contains additonal files which are used in the README
 
+8. Code files:
+```main.py``` : to perform the Model fitting and tracking using MLFlow as mentioned earlier
+```test_main.py``` : To verify if the main file works properly and if the MLFlow data is saved
 
-The GitHub Actions workflow is writtened in YAML formatt that automates various tasks in GitHub repositories with the name defined as Ayush_CI.
-
-## Readme
-The README file contains all the relevant information of the files the repository contains and how to consume them. 
-
-## Requirements.txt
-Contains a list of packages to be installed. For now, I have used only the basic packages to be installed (considering one of the goal of the project was to keep it as limited as possible). The version of the package can also be specified to enable multiple collaborators to work on the same project. 
-
-## MakeFile
-The Makefile contains information on installing packages, code formatting and testing. More functionalities could be added depending on the complexity of the project. 
-
-## Code Files
-To test the working of the project, a sample file sum_two.py was created that adds the sum of two numbers in a code. 
-
-## Github Actions:
-Contains a cicd.yml file to call that uses the triggers of push and pull to call the functions defined on MakeFile. For any changes in repository, this runs all the functionalities - installing packages, formatting code, and testing the code. 
-
-## Workflow
-The GitHub actions 'Make install' call the install function in MakeFile to install all the packages there are in requirements.txt (mentioned under Makefile install )
-
-The following project was run via Actions Tab and all the mentioned actions had been successfully executed. 
 
 ![Workflow](https://github.com/ayushg245/IDS-706-Proj1/blob/main/GitHub.png)
 
