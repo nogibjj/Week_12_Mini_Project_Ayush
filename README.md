@@ -1,4 +1,5 @@
 # Machine Learning using MLFlow
+[![CI/CD Pipeline](https://github.com/nogibjj/Individual_Project4_Ayush/actions/workflows/actions.yml/badge.svg)](https://github.com/nogibjj/Individual_Project4_Ayush/actions/workflows/actions.yml)
 This repositroy contains files to manage an End-to-End machine leanring project lifecycle using MLFlow
 #By - Ayush Gupta
 #Net ID- ag758
