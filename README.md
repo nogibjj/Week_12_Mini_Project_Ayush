@@ -21,7 +21,7 @@ This will open a browser section where the user can view and interact with the i
 
 ![ Sameple Execution](https://github.com/nogibjj/Week_12_Mini_Project_Ayush/blob/main/sample_execution.png)
 
-
+Detailed view of single execution:
 
 ![ Detailed Execution](https://github.com/nogibjj/Week_12_Mini_Project_Ayush/blob/main/sample_execution_2.png)
 
