@@ -19,6 +19,12 @@ To have an interactive view of the results, run the following command in the Ter
 
 This will open a browser section where the user can view and interact with the information about the models:
 
+![ Sameple Execution](https://github.com/nogibjj/Week_12_Mini_Project_Ayush/blob/main/sample_execution.png)
+
+
+
+![ Detailed Execution](https://github.com/nogibjj/Week_12_Mini_Project_Ayush/blob/main/sample_execution_2.png)
+
 
 ## Contents
 The repository contains the following items:
